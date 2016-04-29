@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+.team1{
+    list-style: none;
+}
+body{
+
+    background: linear-gradient(white, orange); /* Standard syntax */
+}
+#team{
+    border-style: solid;
+    border-color: white;
+}
+.row {
+    margin-right: 5px;
+    margin-left: 0px;
+}
+.grandcircus{
+
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+    margin-left: 200px;
+}
+.jumbotron{
+    background: white;
+    text-decoration-color: white;
+}

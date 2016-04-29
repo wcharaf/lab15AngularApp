@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Lab-15</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link type="text/css" href="stylesheet.css" rel="stylesheet">
+</head>
+
+
+
+<body ng-app='myModule' ng-controller = 'countControllers' >
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="title">Dog and Cat Profile!</h1>
+        <center>
+          <p class="subtitle">Find out whether you are compatible with a dog or cat!</p>
+        </center>
+    </div>
+
+    <div id="team" class="row">
+
+      <div class="col-sm-4">
+        <h3>Team 1</h3>
+        <ul class="team1">
+          <li>Shelby</li>
+          <li>Jessica.L</li>
+          <li>Michael</li>
+          <li>Cara</li>
+        </ul>
+      </div>
+
+    <div class="col-sm-4">
+      <h3>Team 2</h3>
+      <ul class="team2">
+          <li>Leah</li>
+          <li>Wissam</li>
+          <li>Jessica. D</li>
+          <li>Kevin</li>
+        </ul>
+    </div>
+
+    <div class="col-sm-4">
+      <h3 class="team3">Team 3</h3>
+        <ul>
+        <li>Katie</li>
+        <li>Luigi</li>
+        <li>Nada</li>
+        </ul>
+    </div>
+
+  </div>
+
+  <br>
+
+  <div class="row">
+        <div class="col-sm-4">
+        </div>
+
+        <div class="col-sm-4">
+        <input type="text" placeholder="Team Member" size="30" ng-model = "tmName"></input>
+
+        <button  class="btn-primary" type="button" ng-click = "name()">Submit</button>
+        </div>
+
+        <div class="col-sm-4"></div>
+        </div>
+
+</div>
+
+<ng-view></ng-view>
+
+
+
+<div class="well well-lg">
+
+<h3 >Results: {{newname}} is a member of Team {{teamnumber}}</h3>
+
+</div>
+
+
+
+</div>
+
+<footer>
+
+Created By: Kevin, Wissam, Leah, Jessica D. Copyright@GrandCircus
+
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src = "app.js"></script>
+<script type="text/javascript" src="countService.js"></script>
+<script type="text/javascript" src="countController.js"></script>
+<script type="text/javascript" src="teammember.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>
